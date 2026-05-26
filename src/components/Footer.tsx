@@ -27,7 +27,7 @@ export default function Footer() {
 
     // Retrieve access key from env or fallback to placeholder.
     // To set up, create a .env.local file with: NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_key_here
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "67501ee1-c86c-4ff0-9769-fea8f6d37f17";
     formData.append("access_key", accessKey);
 
     try {
