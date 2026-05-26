@@ -31,10 +31,6 @@ export default function Footer() {
     formData.append("access_key", accessKey);
 
     const object = Object.fromEntries(formData);
-    // Explicitly set botcheck if not checked to keep the key in the payload
-    if (!object.botcheck) {
-      object.botcheck = "false";
-    }
     const json = JSON.stringify(object);
 
     try {
