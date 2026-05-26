@@ -45,7 +45,7 @@ export default function Footer() {
         setStatus('error');
         setResultMessage(data.message || "Failed to submit. Please ensure your Web3Forms Access Key is set up correctly.");
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
       setResultMessage("Unable to establish network connection. Please check your internet and try again.");
     }
