@@ -30,10 +30,21 @@ export default function Footer() {
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "67501ee1-c86c-4ff0-9769-fea8f6d37f17";
     formData.append("access_key", accessKey);
 
+    const object = Object.fromEntries(formData);
+    // Explicitly set botcheck if not checked to keep the key in the payload
+    if (!object.botcheck) {
+      object.botcheck = "false";
+    }
+    const json = JSON.stringify(object);
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: json,
       });
 
       const data = await response.json();
@@ -43,7 +54,7 @@ export default function Footer() {
         form.reset();
       } else {
         setStatus('error');
-        setResultMessage(data.message || "Failed to submit. Please ensure your Web3Forms Access Key is set up correctly.");
+        setResultMessage(data.message || "Failed to submit. Please ensure your Web3Forms Access Key is active.");
       }
     } catch {
       setStatus('error');
