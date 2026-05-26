@@ -103,8 +103,8 @@ export default function Footer() {
                   value="New Portfolio message from Shubham Singh Website" 
                 />
 
-                {/* Grid Inputs */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                 {/* Grid Inputs */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="name" className="text-xs font-semibold text-zinc-400">Name</label>
                     <input
@@ -125,6 +125,17 @@ export default function Footer() {
                       name="email"
                       required
                       placeholder="you@example.com"
+                      className="px-4 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 hover:border-white/20 focus:border-[#ff6b35] focus:bg-white/[0.04] text-white placeholder-zinc-600 focus:outline-none transition-all duration-300 text-sm"
+                    />
+                  </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <label htmlFor="phone" className="text-xs font-semibold text-zinc-400">Mobile Number</label>
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      placeholder="+91 98765 43210"
                       className="px-4 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 hover:border-white/20 focus:border-[#ff6b35] focus:bg-white/[0.04] text-white placeholder-zinc-600 focus:outline-none transition-all duration-300 text-sm"
                     />
                   </div>
