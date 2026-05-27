@@ -76,7 +76,7 @@ const projects: Project[] = [
     category: 'AI Assistant',
     description: 'Offline-first voice assistant for rural India optimized for 2G bandwidth (<2KB per query).',
     longDescription: 'GramSevak AI is a hyper-efficient, offline-first voice assistant designed specifically for rural India\'s connectivity challenges. Running on a lightweight PWA footprint of just 50KB, it delivers critical government schemes, healthcare steps, and agricultural market rates over low-end 2G networks, using a fallback SMS/USSD channel when offline.',
-    image: 'https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?q=80&w=2070&auto=format&fit=crop',
+    image: '/Gramsevek.png',
     github: 'https://github.com/Rajputshubham07/GRAMSEVAK-AI_VERTEX',
     demo: 'https://gramsevak-ai.netlify.app',
     techStack: ['Python', 'FastAPI', 'PWA', 'Web Speech API', 'RAG Pipeline', 'Keyword-Semantic Router'],
