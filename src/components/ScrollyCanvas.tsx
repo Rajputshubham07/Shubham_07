@@ -38,7 +38,7 @@ export default function ScrollyCanvas({ heroRef }: Props) {
         };
         img.onload = done;
         img.onerror = done;
-        img.src = `/sequence/frame_${padded}_delay-0.055s.png`;
+        img.src = `/sequence/frame_${padded}_delay-0.055s.webp`;
         imagesRef.current[i] = img;
       });
     });

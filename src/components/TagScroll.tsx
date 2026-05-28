@@ -1,11 +1,11 @@
 import React from 'react';
 
 const tagsRow1 = [
-  "AI Educator", "400K+ Students", "UI/UX Designer", "Web Developer", "Prompt Engineer"
+  "AI Educator", "40+ Students", "UI/UX Designer", "Web Developer", "Prompt Engineer"
 ];
 
 const tagsRow2 = [
-  "n8n Automation", "Course Creator", "Workshop Speaker at NITs", "21+ Platforms", "190+ Countries"
+  "n8n Automation", "Course Creator", "Workshop Speaker", "2+ Platforms", "10+ Countries"
 ];
 
 export default function TagScroll() {
