@@ -6,8 +6,8 @@ export default function JourneyTimeline() {
   const timeline = [
     { year: "2023", title: "Started at AKTU", desc: "Began my journey into computer science and software development." },
     { year: "2024", title: "Web Development Focus", desc: "Mastered HTML, CSS, JavaScript, React, and Tailwind CSS." },
-    { year: "2025", title: "Lucknow Metro App", desc: "Developed a comprehensive smart transit solution with real-time tracking." },
-    { year: "2026", title: "Full Stack Innovator", desc: "Building startup-level solutions with premium, futuristic aesthetics." },
+    { year: "2025", title: "Started AI Projects", desc: "Realising the potential of AI , i started building AI related projects to solve real world problems." },
+    { year: "2026", title: "AI and Web Development", desc: "Building startup-level solutions with premium, futuristic aesthetics." },
   ];
 
   return (

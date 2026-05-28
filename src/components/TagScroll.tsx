@@ -11,7 +11,8 @@ const tagsRow2 = [
 export default function TagScroll() {
   return (
     <section className="bg-[#0d0d0d] py-16 overflow-hidden border-t border-white/5">
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes scroll-left {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
@@ -34,7 +35,7 @@ export default function TagScroll() {
       `}} />
 
       <div className="flex flex-col gap-6">
-        
+
         {/* Row 1: Scrolling Left */}
         <div className="relative flex whitespace-nowrap overflow-hidden">
           <div className="flex animate-scroll-left w-max">
